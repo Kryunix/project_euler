@@ -1,4 +1,4 @@
 project_euler
 =============
 
-Here is where I store my Project Euler solved problems
+Here is where I store my Project Euler's solved problems
