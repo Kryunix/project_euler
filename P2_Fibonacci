@@ -1,0 +1,26 @@
+#include<iostream>
+#include<iomanip>
+#include<limits>
+
+using namespace std;
+
+int main()
+{
+	int a = 1, b = 2;
+	int sum = 0, sumtotal = 0;
+	do
+	{
+		sum = a + b;
+		a = b;
+		b = sum;
+		if(b < 4000000)
+		{
+			if(sum % 2 == 0)
+			{	
+				sumtotal = sumtotal + sum;			
+				cout << setprecision(10) << b << "\n" << endl;
+			}		
+		}
+	}while(b < 4000000);
+	cout << setprecision(10) << sumtotal + 2 << endl;
+}
